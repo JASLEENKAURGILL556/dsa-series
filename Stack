@@ -1,0 +1,42 @@
+import java.io.*;
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		// stack datastructure follows last in first Out
+		// index numbering starts from 1 
+        
+        Stack<String> stack=new Stack<String>();
+        
+        // push function to add element on to stack
+        stack.push("Jasleen");
+        stack.push("Avneet");
+        stack.push("Bandna");
+        stack.push("lee so young");
+        stack.push("Hynjin");
+        
+        // empty function to check is stack is empty or not 
+        System.out.println(stack.empty());
+        
+        //pop funciton to delete element from stack
+        // deletion will happen from the top 
+        stack.pop();
+        stack.pop();
+        
+        //peek funciton to see top  elements of stack
+        System.out.println(stack.peek());
+        
+        // search funciton to search element in the stack
+        System.out.println(stack.search("Bandna"));
+        
+        // to see element of stack simply print out the stack
+        System.out.println(stack);
+		/*
+		1)undo/redo in texteditor
+		2)moving b through browsing history
+		3)backtracking
+		4)calling function
+		*/
+	}
+}
