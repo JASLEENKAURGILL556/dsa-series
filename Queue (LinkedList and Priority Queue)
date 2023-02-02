@@ -1,0 +1,90 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.io.*;
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		//Queue is data structure that works on principle first in first out 
+		// indexing start from 1
+		// Queue have two sub-types LinkedList and priority queue
+		
+		//LinkedList type of Queue
+		Queue<String> queue=new LinkedList<String>();
+		
+		//offer function is used for adding element in Queue
+		//element is added at tail
+		queue.offer("Felix");
+		queue.offer("Hyunjin");
+		queue.offer("Chris");
+		queue.offer("Yuna");
+		
+		// to check is queue is empty or not we use isEmpty function
+		System.out.println(queue.isEmpty());
+		
+		//poll function is used for deleteing the element from queue
+		// but in queue element will delete from head
+		queue.poll();
+		
+		// now to see how many element present in the queue
+		System.out.println(queue);
+		
+		// peek function is used to see the head element of queue
+		System.out.println(queue.peek());
+		
+		// size function to see length of queue
+		System.out.println(queue.size());
+		
+		// contains function to search for element in the queue 
+	    System.out.println(queue.contains("Hyunjin"));
+		
+		/*
+		uses of queue LinkedList
+		1)Keyboard buffer 
+		2)Printer queue 
+		3)Used in LinkedList, PriorityQueue and Breadth-first-search
+		
+		
+		/////////////////////////////// end ////////////////////////////////
+		
+		/*
+		PriorityQueue  is works on first in first out principle but
+		in but data structure with highest priority first before element of 
+		lower priority 
+		*/
+		
+		Queue<String> priorqueue = new PriorityQueue<String>();
+		
+		// offer funciton to add element in priority Queue
+		priorqueue.offer("A");
+		priorqueue.offer("I");
+		priorqueue.offer("C");
+		priorqueue.offer("D");
+		priorqueue.offer("E");
+		
+		//to see elemnts of priority queue
+		System.out.println(priorqueue);
+		
+		//poll function to delete element from priorqueue
+		priorqueue.poll();
+		
+		//isEmpty function to check if priority queue is empty or not
+		System.out.println(priorqueue.isEmpty());
+		
+		//to see elemnts of priority queue
+		System.out.println(priorqueue);
+		
+	 // reverseOrder function to reverse the order of priority
+   //Queue<String> priorqueue = new PriorityQueue<String>(Collections.reverseOrder());
+	    //System.out.println(priorqueue);
+		
+		
+		
+	}
+}
