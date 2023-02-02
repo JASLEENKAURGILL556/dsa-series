@@ -1,0 +1,55 @@
+
+*******************************************************************************/
+import java.util.*;
+import java.io.*;
+public class Main
+{
+	public static void main(String[] args) {
+		// Linked List is data structure that have 
+		// two parts data and pointer to next node 
+		// indexing starts from 1
+		// main advantage of Linked list is insertion and deletion time complexity is O(1)
+		// disadvantage is searching Time complexity is O(n)
+		
+		
+		LinkedList<String> linkedlist=new LinkedList<String>();
+		// Linked list can be used as stack and queue data structure
+		
+		// as stack refer stack notes 
+		linkedlist.push("A");
+		linkedlist.push("B");
+		// as queue refer queue notes
+		
+		// Additonal function of LinkedList
+		
+		// to add element at specific index no use add function nameoflinkedlist.add(index,data)
+		linkedlist.add(1,"F");
+	    
+	    //remove funciton to delete specific element from list
+	    linkedlist.remove("E");
+	    
+	    //peekFirst to see first element of linkedlist
+	    System.out.println(linkedlist.peekFirst());
+	    
+	    //peekLast function to see last element of linkedlist
+	    System.out.println(linkedlist.peekLast());
+	    
+	    //addFirst function to add element at head of linkedlist
+	    linkedlist.addFirst("J");
+	    
+	    //addLast function to add last element of linkedlist
+	    linkedlist.addLast("Z");
+	    
+	    //removeFirst function to remove first element of Linked list
+	    String x=linkedlist.removeFirst();
+	    System.out.println(x);
+	    
+	    //removeLast function to remvoe last element of linked list
+	    String y=linkedlist.removeLast();
+	    System.out.println(y);
+	    
+	    // to see all elements of linked list just pass the name 
+	    System.out.println(linkedlist);
+		
+	}
+}
